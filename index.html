@@ -6,21 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aprendiendo jQuery</title>
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script> -->
+    <style>
+        .zebra {
+            border: 5px dashed blueviolet;
+        }
 
+        .grande {
+            font-size: 50px;
+        }
+
+        .margenSuperior {
+            display: block;
+            margin-top: 45px;
+        }
+
+        .resaltado {
+            border-bottom: 2px solid blue;
+        }
+    </style>
+    <!-- 
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="js/00_primeros_pasos.js"></script>
+    
+    -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/01_primeros_pasos.js"></script>
-   
+    <script src="js/01_selectores.js"></script>
+
 </head>
 
 <body>
     <h1>Aprendiendo jQuery</h1>
-    <p>Ejercicios de jQuery</p>
 
     <div id="contenido"></div>
     <div id="contenido2"></div>
+
+    <ul>
+        <li>
+            <a href="" title="google">Ir a Google</a>
+        </li>
+        <li>
+            <a href="" title="facebook">Ir a Facebook</a>
+        </li>
+
+    </ul>
+
+    <p id="rojo" class="zebra">Ejercicios de jQuery</p>
+    <p id="amarillo" class="sinBorde">Practicando con Selectores</p>
+    <p id="verde" class="sinBorde">Quiero ser un párrafo verde</p>
+    <p class="zebra">Soy un párrafo blanco</p>
+
+    <div id="caja">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li class="resaltado">Elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
 </body>
 
 </html>
