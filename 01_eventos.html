@@ -9,13 +9,40 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/02_eventos.js"></script>
     <style>
+        input {
+            font-size: 20px;
+            padding: 10px;
+            width: 300px;
+        }
+
         #caja {
             border: 2px solid black;
             background: greenyellow;
             height: 250px;
             width: 250px;
-            transition: 500ms all; /* Para que la transcioón sea suave tanto al pasar el ratón como al quitarlo */
+            transition: 500ms all;
+            /* Para que la transcioón sea suave tanto al pasar el ratón como al quitarlo */
         }
+
+        #datos {
+            border: 2px dashed burlywood;
+            height: 50px;
+            margin-top: 20px;
+            width: 200px;
+            display: none;
+        }
+
+        #sigueme {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: yellowgreen;
+            opacity: 0.5;
+            border: 1px solid black;
+            border-radius: 999px;
+        }
+
         /*
         #caja:hover {
             background: brown;
@@ -27,10 +54,17 @@
 </head>
 
 <body>
+    <form>
+        <input type="text" id="nombre">
+    </form>
+
+    <div id="datos"></div>
     <h1>Aprendiendo Eventos en jQuery</h1>
     <div id="caja">
         Soy una caja
     </div>
+
+    <div id="sigueme"></div>
 
 </body>
 
