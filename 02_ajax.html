@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peticiones Ajax</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/04_ajax.js"></script>
+    <style>
+        #datos {
+            border: 2px solid green;
+            height: 250px;
+            /* Para que toda la pagina se cargue aquí */
+            overflow: scroll;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ajax con jQuery</h1>
+
+    <form action="https://reqres.in/api/users" method="post" id="formulario">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre">
+        <label for="">Trabajo:</label>
+        <input type="text" name="trabajo">
+        <input type="submit" value="Registrar">
+    </form>
+    <br>
+    <div id="datos"></div>
+</body>
+
+</html>
