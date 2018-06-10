@@ -28,4 +28,33 @@ $(document).ready(function () {
         });
     }
 
+    // Recorrer un array en jquery:
+    // Declaramos el array:
+    var lenguajesProgramacion = ['PHP', 'Javascript', 'C#', 'Java', 'Python'];
+    console.log(lenguajesProgramacion);
+
+    $.each(lenguajesProgramacion, function (i, v) {
+        if (i == 0) {
+            console.log("Posición", "Lenguaje");
+            $('#lenguajes').append('<h2>Lenguajes de Programación</h2>');
+        }
+        console.log(i + "-" + v);
+        $('#lenguajes').append('<p>' + i + "-" + v + '</p>');
+    });
+
+    var juegos = {
+        primero: 'Witcher 3',
+        segundo: 'Dark Souls',
+        tercero: 'Horizon',
+        cuarto: 'Monkey Island',
+        quinto: 'Tomb Raider'
+    };
+    console.log(juegos);
+
+    $.each(juegos, function (i, v) {
+        console.log(i + "-" + v);
+        $('#juegos').append('<p>' + i + ': ' + v + '</p>');
+    });
+
+
 });
